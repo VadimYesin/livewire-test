@@ -18,7 +18,7 @@ class Survey extends Model
     // ----- Relation -----
     public function questions(): HasMany
     {
-        return $this->hasMany(Question::class, 'id', 'survey_id');
+        return $this->hasMany(Question::class, 'survey_id', 'id');
     }
 
     public function type(): BelongsTo

@@ -33,7 +33,7 @@ class Question extends Model
     protected function options(): Attribute
     {
         return Attribute::make(
-            get: fn (string $value) => json_decode($value),
+            get: fn ($value) => $value ? json_decode($value, true) : null,
             set: fn (array $value) => json_encode($value),
         );
     }

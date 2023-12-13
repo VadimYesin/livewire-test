@@ -31,6 +31,8 @@
             <main>
                 {{ $slot }}
             </main>
+
+            @livewire('wire-elements-modal')
         </div>
     </body>
 </html>

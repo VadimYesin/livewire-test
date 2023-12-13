@@ -13,11 +13,10 @@ class Submissions extends Model
     protected $fillable = [
         'uoa_id',
         'answer',
-        'title'
     ];
 
     // ----- Relations -----
-    public function unitOfAnalysis(): BelongsTo
+    public function unit(): BelongsTo
     {
         return $this->belongsTo(UnitOfAnalysis::class, 'uoa_id', 'id');
     }

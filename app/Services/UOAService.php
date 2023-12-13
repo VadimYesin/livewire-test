@@ -9,8 +9,8 @@ class UOAService
     public function create(array $data): UnitOfAnalysis
     {
         $uoa = UnitOfAnalysis::create([
-            'user_id' => $data['user_id'],
-            'type_id' => $data['type_id'],
+            'user_id' => $data['userID'],
+            'type_id' => $data['typeID'],
             'title' => $data['title'],
         ]);
 
