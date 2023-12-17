@@ -31,6 +31,11 @@ class UnitsTable extends Component
             ->get();
     }
 
+    public function submit()
+    {
+        dd($this->validate());
+    }
+
     public function render()
     {
         return view('livewire.unit-of-analysis.units-table');

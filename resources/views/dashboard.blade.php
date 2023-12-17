@@ -29,9 +29,5 @@
         <div class="py-2 max-w-7xl mx-auto sm:px-6 lg:px-8">
             <livewire:unit-of-analysis.units-table />
         </div>
-
-        <div class="py-2 max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <livewire:survey.modal />
-        </div>
     </div>
 </x-app-layout>
